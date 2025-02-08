@@ -1,0 +1,309 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style with Background Image */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('path/to/your-image.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Style */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for header */
+    color: #ffffff; /* White text */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #cccccc; /* Light gray on hover */
+}
+
+/* Home Section Style */
+#home {
+    background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent white background to ensure text visibility */
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    color: #000000; /* Black text for main heading */
+}
+
+#home p {
+    font-size: 1.2em;
+    color: #666666; /* Medium gray text */
+}
+
+/* Shop Section Style */
+#shop {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#shop h2 {
+    font-size: 2.5em;
+    color: #000000; /* Black text */
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: #f9f9f9; /* Light gray background */
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item img:hover {
+    transform: scale(1.1);
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    color: #000000; /* Black text */
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    color: #666666; /* Medium gray text */
+}
+
+.product-item button {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.product-item button:hover {
+    background-color: #cccccc; /* Light gray on hover */
+    color: #000000; /* Dark text */
+}
+
+/* Cart Section Style */
+#cart {
+    background-color: rgba(249, 249, 249, 0.8); /* Light gray with transparency */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#cart h2 {
+    font-size: 2.5em;
+    color: #000000; /* Black text */
+    margin-bottom: 30px;
+}
+
+#cart-items {
+    margin-bottom: 30px;
+}
+
+#cart-items div {
+    font-size: 1.2em;
+    color: #666666; /* Medium gray text */
+    margin-bottom: 10px;
+}
+
+#total-price {
+    font-size: 2em;
+    color: #000000; /* Black text */
+}
+
+/* Checkout Form Style */
+#checkout-form {
+    background-color: #ffffff; /* White background */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-form input,
+#checkout-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#checkout-form button {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#checkout-form button:hover {
+    background-color: #cccccc; /* Light gray on hover */
+    color: #000000; /* Dark text */
+}
+
+/* Invoice Section Style */
+#invoice-section {
+    background-color: #ffffff; /* White background */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#invoice-details {
+    font-size: 1.2em;
+    color: #666666; /* Medium gray text */
+    text-align: left;
+}
+
+#invoice-details h3 {
+    margin-top: 20px;
+    color: #000000; /* Black heading */
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Footer Section Style */
+footer {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    #cart-items {
+        text-align: left;
+    }
+}
+/* Invoice Section */
+#invoice-section {
+    background-color: #ffffff; /* White background */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#invoice-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#invoice-logo {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+#invoice-header h2 {
+    font-size: 2.5em;
+    color: #000000; /* Black text */
+    margin: 0;
+}
+
+/* Invoice Details Style */
+#invoice-details {
+    font-size: 1.2em;
+    color: #666666; /* Medium gray text */
+    text-align: left;
+    margin-top: 30px;
+}
+
+#invoice-details h3 {
+    font-size: 1.5em;
+    color: #000000; /* Black heading */
+    margin-bottom: 15px;
+}
+
+#invoice-details p {
+    margin-bottom: 10px;
+}
